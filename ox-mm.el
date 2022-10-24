@@ -64,7 +64,6 @@ Otherwise, place it right after it."
 ;;; Define Back-End
 
 (org-export-define-derived-backend 'mm 'html
-  :export-block '("MM" "MOINMOIN")
   :filters-alist '((:filter-parse-tree . org-mm-separate-elements))
   :menu-entry
   '(?m "Export to MoinMoin"
